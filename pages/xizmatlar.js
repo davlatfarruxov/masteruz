@@ -1,30 +1,13 @@
-import { MainLayout } from "../components/MainLayout";
-import Link from 'next/dist/client/link';
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 import Router from 'next/router'
-
-export default function Xizmatlar(params) {
-  const linkClickHandler = () => {
-  }
+export default function Home() {
   return (
-    <MainLayout title={'Xizmatlar'}>
-      <div className="navigation">  
-        <div className="container">
-          <div className="navbar">
-            <div className="logo">
-            <h1>Firdavs Faxriddinov</h1>
-          </div>  
-          <div className="topnav" id="myTopnav">
-            <Link href="/"><a>Bosh Sahifa</a></Link>
-            <Link href="#"><a className="active1">Xizmatlar</a></Link>
-            <Link href="/portfolio"><a>Portfolio</a></Link>
-            <Link href="/ma'lumot"><a>Ma'lumot</a></Link>
-            <Link href="/aloqa"><a>Aloqa</a></Link>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars "></i></a>
-          </div>
-          </div>  
-        </div>
-      </div>
+    <div className={styles.container}>
+      <Head>
+        <title>Xizmatlar | Firdavs Faxriddinov's Personal Website</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <header>
         <div className="container">
           <div className="text-xizmatlar">
@@ -67,11 +50,6 @@ export default function Xizmatlar(params) {
           </div>        
         </div>
       </header>
-      <footer id="footer">
-        <div className="container">
-          <h4 className="footer-text">Copyright ©2021 All rights reserved | made by Davlat Farruxov</h4>
-        </div>
-      </footer>
       <style jsx> {`
           *{
               font-family: 'Robota', sans-serif;
@@ -240,7 +218,7 @@ export default function Xizmatlar(params) {
               padding-right: 20px;
               padding-bottom: 10px;
               background: #afafafaf; 
-              width: 660px;
+              width: 698px;
               margin: auto;
               margin-top: 50px;
           }
@@ -278,7 +256,46 @@ export default function Xizmatlar(params) {
               display: flex;
               justify-content: center;
           }
+          @media only screen and (max-width: 768px) {
+            .xizmatlar {
+                display: block;
+                justify-content: center;
+            }
+            .container {
+                width: 330px;
+            }
+            .maslahat {
+                box-shadow: 0 15px 34px rgb(40 42 53 / 25%);
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                background: #afafafaf; 
+                width: 330px;
+                margin: auto;
+                margin-top: 50px;
+            }
+            .maslahat h2 {
+                color: #111;
+                text-align: center;
+            }
+            .maslahat h1 {
+              color: #111;
+              text-align: center;
+            }
+            .block-1, .block-2, .block-3{
+                width: 190px;
+                margin: 0 auto;
+            }
+            .block-2 h1 {
+                text-align: center;
+            }
+            .block-2 {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+          }  
     `}</style>
-      </MainLayout>
+      </div>
   )  
 }

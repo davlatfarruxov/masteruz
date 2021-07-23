@@ -1,4 +1,5 @@
-import { MainLayout } from "../components/MainLayout";
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import profilePic from '../img/image-1.jpg'
 import profilePic2 from '../img/image-2.jpg'
@@ -18,40 +19,25 @@ import profilePic15 from '../img/image-15.jpg'
 import profilePic16 from '../img/image-16.jpg'
 import Link from 'next/link';
 import Router from 'next/router'
-
-export default function Portfolio(params) {
+export default function Home() {
   return (
-    <MainLayout title={'Portfolio'}>
-      <header id="header1">
-        <div className="navigation">  
-          <div className="container">
-            <div className="navbar">
-              <div className="logo">
-                <h1>Firdavs Faxriddinov</h1>
-              </div>  
-              <div className="topnav" id="myTopnav">
-                <Link href="/"><a>Bosh Sahifa</a></Link>
-                <Link href="/xizmatlar"><a>Xizmatlar</a></Link>
-                <Link href="#"><a className="active1">Portfolio</a></Link>
-                <Link href="/ma'lumot"><a>Ma'lumot</a></Link>
-                <Link href="/aloqa"><a>Aloqa</a></Link>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars "></i></a>
-              </div>
-            </div>  
-          </div>
-        </div>
-      </header>  
-        <section id="portfolio">
+    <div className={styles.container}>
+      <Head>
+        <title>Portfolio | Firdavs Faxriddinov's Personal Website</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+        <header id="portfolio">
             <div className="container">
               <div className="home-portfolio">
                 <h1>Portfolio</h1>
                 <div className="line-portfolio"></div>  
+                <div className="Portfolio-images-tab">
                 <div className="Portfolio-images">
                   <div className="image-1">
                     <Link href={'/portfolio-pages/page-1'}><Image src={profilePic} alt="Pictures of the author"/></Link>
                   </div>  
                   <div className="image-2">
-                    <Link href={'/portfolio-pages/page-2'}><Image src={profilePic2} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-2'}><Image src={profilePic2} alt="Pictures of the author" /></Link>
                   </div>
                   <div className="image-3">
                     <Link href={'/portfolio-pages/page-3'}><Image src={profilePic3} alt="Pictures of the author"/></Link>
@@ -102,19 +88,84 @@ export default function Portfolio(params) {
                     <Link href={'/portfolio-pages/page-16'}><Image src={profilePic16} alt="Pictures of the author"/></Link>
                   </div>   
                 </div> 
+                </div>
+                <div className="Portfolio-images-mobile">
+                <div className="Portfolio-images-mob1">
+                  <div className="image-mob1">
+                    <Link href={'/portfolio-pages/page-1'}><Image src={profilePic} alt="Pictures of the author"/></Link>
+                  </div>  
+                  <div className="image-mob2">
+                    <Link href={'/portfolio-pages/page-2'}><Image src={profilePic2} alt="Pictures of the author" /></Link>
+                  </div>
+                </div>
+                <div className="Portfolio-images-mob2">  
+                  <div className="image-mob3">
+                    <Link href={'/portfolio-pages/page-3'}><Image src={profilePic3} alt="Pictures of the author"/></Link>
+                  </div>
+                  <div className="image-mob4">
+                    <Link href={'/portfolio-pages/page-4'}><Image src={profilePic4} alt="Pictures of the author"/></Link>
+                  </div>   
+                </div> 
+                <div className="Portfolio-images-mob3">
+                  <div className="image-mob5">
+                    <Link href={'/portfolio-pages/page-5'}><Image src={profilePic5} alt="Pictures of the author"/></Link>
+                  </div>  
+                  <div className="image-mob6">
+                    <Link href={'/portfolio-pages/page-6'}><Image src={profilePic6} alt="Pictures of the author"/></Link>
+                  </div>
+                </div>
+                <div className="Portfolio-images-mob4">  
+                  <div className="image-mob7">
+                    <Link href={'/portfolio-pages/page-7'}><Image src={profilePic7} alt="Pictures of the author"/></Link>
+                  </div>
+                  <div className="image-mob8">
+                    <Link href={'/portfolio-pages/page-8'}><Image src={profilePic8} alt="Pictures of the author"/></Link>
+                  </div>   
+                </div> 
+                <div className="Portfolio-images-mob5">
+                  <div className="image-mob9">
+                    <Link href={'/portfolio-pages/page-9'}><Image src={profilePic9} alt="Pictures of the author"/></Link>
+                  </div>  
+                  <div className="image-mob10">
+                    <Link href={'/portfolio-pages/page-10'}><Image src={profilePic10} alt="Pictures of the author"/></Link>
+                  </div>
+                </div>
+                <div className="Portfolio-images-mob6">  
+                  <div className="image-mob11">
+                    <Link href={'/portfolio-pages/page-11'}><Image src={profilePic11} alt="Pictures of the author"/></Link>
+                  </div>
+                  <div className="image-mob12">
+                    <Link href={'/portfolio-pages/page-12'}><Image src={profilePic12} alt="Pictures of the author"/></Link>
+                  </div>   
+                </div> 
+                <div className="Portfolio-images-mob7">
+                  <div className="image-mob13">
+                    <Link href={'/portfolio-pages/page-13'}><Image src={profilePic13} alt="Pictures of the author"/></Link>
+                  </div>  
+                  <div className="image-mob14">
+                    <Link href={'/portfolio-pages/page-14'}><Image src={profilePic14} alt="Pictures of the author"/></Link>
+                  </div>
+                </div> 
+                <div className="Portfolio-images-mob8">  
+                  <div className="image-mob15">
+                    <Link href={'/portfolio-pages/page-15'}><Image src={profilePic15} alt="Pictures of the author"/></Link>
+                  </div>
+                  <div className="image-mob16">
+                    <Link href={'/portfolio-pages/page-16'}><Image src={profilePic16} alt="Pictures of the author"/></Link>
+                  </div>   
+                </div>  
+              </div>
               </div>
               <div className= "xizmatlar-btns">
                 <button onClick={() => Router.push('/xizmatlar')} className="btn-aloqa">Xizmatlar</button>
                 <button onClick={() => Router.push('/aloqa')} className="btn-aloqa">Aloqa</button>
                </div>  
             </div>  
-          </section>
-          <footer id="footer">
-            <div className="container">
-              <h4 className="footer-text">Copyright ©2021 All rights reserved | made by Davlat Farruxov</h4>
-            </div>
-          </footer>
+          </header>
           <style jsx> {`
+            * {
+              box-sizing: content-box;
+            }
             #portfolio {
                 margin-top: ;
                 padding-top: 40px;
@@ -194,6 +245,7 @@ export default function Portfolio(params) {
             .image-16  {
                 width: 250px;   
             }
+            
             .Portfolio-images-4 {
                 padding-top: 50px;
                 display: flex;
@@ -204,78 +256,22 @@ export default function Portfolio(params) {
                 width: 250px;
                 margin: auto;
             }
-            .home-portfolio{
+            .home-portfolio h1{
                 text-align: center;
-                font-size: 35px; 
+                font-size: 50px; 
                 margin:  53px 0;
-                margin-bottom: 0;
-                padding-bottom: 50px;
+                margin-bottom: 50px !important;
+    
+                
             }
-            .footer-text {
-                background: #242f51;
-                text-align: center;
-                color: #fff;
-                padding-top: 50px;
-                padding-bottom: 50px;
-              }
-            #footer {
-                background: #242f51;
-            }
-            .topnav a.active {
-                background-color: #04AA6D;
-              color: white;
-            }
-            .topnav a:hover {
-                background-color: coral;
-                text-color: #000 !important;
-            }
-            .topnav a {
-                color: #fff;
-                text-decoration: none;
-                font-weight: 700;
-                padding-left: 15px;
-                padding-right: 15px;
-                height: 60px;
-                padding-top: 21px;
-                padding-bottom: 23px;
-            }
-            .topnav a:hover {
-                background-color: coral;
-                color: #000;
-            }
-            .topnav a i {
-                display: none;
-            }
-            .navbar {
-                position: fixed;
-                display: flex;
-                background: #242f51;
-                height: 60px;
-                left: 0;
-                top:0;
-                right: 0;
-                align-items: center;
-                justify-content: space-between;
-                z-index: 9999;
-                width: 1333px;
-                margin: auto;
-            }
-            .logo h1 {
-                color: #fff;
-                padding-left: 35px;
-            }
-            .topnav .icon {
-                display: none;
-                color: #fff;
-            }
-            .container {
-                width: 1200px;  
-                margin: 0 auto;   
-            }
-            .active1 {
-                color: #000;
-                background-color: #999;
-            }
+            .text-xizmatlar{
+              text-align: center;
+              font-size: 25px; 
+              margin:  53px 0;
+              margin-bottom: 0;
+              padding-bottom: 50px;
+              padding-top: 50px;
+          }
             .btn-aloqa {
                 display: inline-block;
                 font-size: 18px;
@@ -296,8 +292,146 @@ export default function Portfolio(params) {
             .xizmatlar-btns {
                 display: flex;
                 justify-content: center;
+                margin-top: 50px;
+            }
+            .Portfolio-images-mobile {
+                display: none;
+            }
+            @media only screen and (max-width: 768px) {
+              .Portfolio-images {
+                display: block;
+              }
+              .Portfolio-images-tab {
+                display: none;
+              }
+              .Portfolio-images-2 {
+                padding-top: 50px;
+                display: flex;
+                justify-content: center;
+              }
+              .Portfolio-images-mobile {
+                  display: block;
+              }
+              .Portfolio-images-mob1 {
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+              }
+              .Portfolio-images-mob2 {
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+              }
+              .Portfolio-images-mob3 {
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+              }
+              .Portfolio-images-mob4 {
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+              }
+              .Portfolio-images-mob5 {
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+              }
+              .Portfolio-images-mob6 {
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+              }
+              .Portfolio-images-mob7 {
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+              }
+              .Portfolio-images-mob8 {
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+              }
+              .image-mob1  {
+                width: 150px; 
+              }
+              .image-mob2  {
+                  width: 150px; 
+                  padding-left: 30px;
+              }
+              .image-mob3  {
+                width: 150px; 
+              }
+              .image-mob4  {
+                  width: 150px; 
+                  padding-left: 30px;
+              }
+              .image-mob5  {
+                width: 150px; 
+              }
+              .image-mob6  {
+                  width: 150px; 
+                  padding-left: 30px;
+              }
+              .image-mob7  {
+                width: 150px; 
+              }
+              .image-mob8  {
+                  width: 150px; 
+                  padding-left: 30px;
+              }
+              .image-mob9  {
+                width: 150px; 
+              }
+              .image-mob10  {
+                  width: 150px; 
+                  padding-left: 30px;
+              }
+              .image-mob11  {
+                width: 150px; 
+              }
+              .image-mob12  {
+                  width: 150px; 
+                  padding-left: 30px;
+              }
+
+              .image-mob13  {
+                width: 150px; 
+              }
+              .image-mob14  {
+                  width: 150px; 
+                  padding-left: 30px;
+              }.image-mob15  {
+                width: 150px; 
+              }
+              .image-mob16  {
+                  width: 150px; 
+                  padding-left: 30px;
+              }
+              .btn-aloqa {
+                display: inline-block;
+                font-size: 12px;
+                color: #ffffff;
+                background-color: #333333;
+                padding: 7px 5px;
+                border: none;
+                cursor: pointer;
+                width: 70px;
+                margin-left: 25px;
+                margin-right: 25px;
+                margin-bottom: 50px;
+            }
+            .btn-aloqa:hover {
+                background-color: #f7c08a;
+                color: #333333;
+            }
+            .xizmatlar-btns {
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
             }
           `} </style>
-    </MainLayout>
+      </div>
   )
 }

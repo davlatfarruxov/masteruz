@@ -1,6 +1,8 @@
-import { MainLayout } from "../components/MainLayout"
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
+
 import Link from 'next/link'
-import Head from "next/head"
+
 import Image from 'next/image'
 import profilePic from '../img/phone-call.png'
 import profilePic2 from '../img/email.png'
@@ -15,36 +17,14 @@ import profilePic10 from '../img/youtube-images-4.jpg'
 import profilePic11 from '../img/youtube-images-5.jpg'
 import profilePic12 from '../img/youtube-images-6.jpg'
 
-export default function Xizmatlar(params) {
-    const linkClickHandler = () => {
-    }
-    return (
-      <MainLayout title={'Aloqa'}>
-        <Head>
-          <meta name="keywords" content="next,javascript,next.js,react" />
-          <meta name="description" content="this is Persoanl page Firdavs Faxriddinov" />
-          <meta charSet="utf-8"/>  
-
-        </Head>
-        <div className="navigation">  
-          <div className="container">
-            <div className="navbar">
-              <div className="logo">
-              <h1>Firdavs Faxriddinov</h1>
-            </div>  
-            <div className="topnav" id="myTopnav">
-              <Link href="/"><a>Bosh Sahifa</a></Link>
-              <Link href="/xizmatlar"><a>Xizmatlar</a></Link>
-              <Link href="/portfolio"><a>Portfolio</a></Link>
-              <Link href="/ma'lumot"><a>Ma'lumot</a></Link>
-              <Link href="#"><a className="active1">Aloqa</a></Link>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i></a>
-            </div>
-            </div>  
-          </div>
-        </div>
-        <header>
+export default function Contact() {
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Aloqa | Firdavs Faxriddinov's Personal Website</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <header>
           <div className="container">
             <div className="text-xizmatlar">
               <h1>Aloqa</h1>
@@ -69,7 +49,7 @@ export default function Xizmatlar(params) {
                     <Image src={profilePic2} alt="Pictures of the author"/>    
                   </div>
                   <div className="text">
-                    <h3>firdavsfariddinov111@gmail.com</h3>    
+                    <h3>firdavsfaxriddinov111@gmail.com</h3>    
                   </div>
                 </div>
               </div>
@@ -120,6 +100,8 @@ export default function Xizmatlar(params) {
             </div>
           </div>
         </header>
+        
+      
         <section id="youtube">
           <div className="container">
             <div className="youtube">
@@ -166,85 +148,20 @@ export default function Xizmatlar(params) {
             </div>
           </div>
         </section>
-        <footer id="footer">
-          <div className="container">
-            <h4 className="footer-text">Copyright ©2021 All rights reserved | made by Davlat Farruxov</h4>
-          </div>
-        </footer>
         <style jsx> {`
             *{
                 font-family: 'Robota', sans-serif;
                 margin: 0;
                 padding: 0; 
-            }
-            .footer-text {
-                background: #242f51;
-                text-align: center;
-                color: #fff;
-                padding-top: 50px;
-                padding-bottom: 50px;
-            }
-            #footer {
-                background: #242f51;
+                box-sizing: content-box;
             }
             .home-portfolio {
                 padding-bottom: 50px;
                 margin-bottom: 0;
             }
-            .topnav a.active {
-                background-color: #04AA6D;
-                color: white;
-            }
-            .topnav a:hover {
-                background-color: coral;
-                text-color: #000 !important;
-            }
-            .topnav a {
-                color: #fff;
-                text-decoration: none;
-                font-weight: 700;
-                padding-left: 15px;
-                padding-right: 15px;
-                height: 60px;
-                padding-top: 21px;
-                padding-bottom: 23px;
-            }
-            .topnav a:hover {
-                background-color: coral;
-                color: #000;
-            }
-            .topnav a i {
-                display: none;
-            }
-            .navbar {
-                position: fixed;
-                display: flex;
-                background: #242f51;
-                height: 60px;
-                left: 0;
-                top:0;
-                right: 0;
-                align-items: center;
-                justify-content: space-between;
-                z-index: 9999;
-                width: 1333px;
-                margin: auto;
-            }
-            .logo h1 {
-                color: #fff;
-                padding-left: 35px;
-            }
-            .topnav .icon {
-                display: none;
-                color: #fff;
-            }
             .container {
                 width: 1200px;  
                 margin: 0 auto;   
-            }
-            .active1 {
-                color: #999;
-                background-color: #999;
             }
             .line-portfolio {
                 border: 1px solid #000;
@@ -365,8 +282,24 @@ export default function Xizmatlar(params) {
           }
           #youtube {
             background: #000;
+            width: 100%;
+          }
+          @media only screen and (max-width: 768px) {
+              .container {
+                  width: 330px;
+              }
+              .text {
+                font-size: 12px;
+              }
+              .phone {
+                  padding-left: 20px;
+              }
           }
       `}</style>
-        </MainLayout>
+        </div>
+    
     )  
   }
+
+
+ 

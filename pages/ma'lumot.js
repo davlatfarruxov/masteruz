@@ -1,31 +1,18 @@
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 import Router from 'next/router'
-import { MainLayout } from "../components/MainLayout";
 import Link from 'next/link'
 import Image from 'next/image'
 import profilePic from '../img/image-malumot.jpg'
 import profilePic2 from '../img/image-malumot-2.jpg'
-
-export default function Portfolio(params) {
-    return (
-      <MainLayout title={'Ma\'lumot'}>
-          <div className="navigation">  
-            <div className="container">
-              <div className="navbar">
-                <div className="logo">
-                  <h1>Firdavs Faxriddinov</h1>
-                </div>  
-                <div className="topnav" id="myTopnav">
-                  <Link href="/"><a>Bosh Sahifa</a></Link>
-                  <Link href="/xizmatlar"><a>Xizmatlar</a></Link>
-                  <Link href="/portfolio"><a>Portfolio</a></Link>
-                  <Link href="#"><a className="active1" >Ma'lumot</a></Link>
-                  <Link href="/aloqa"><a>Aloqa</a></Link>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars "></i></a>
-                </div>
-              </div>  
-            </div>
-          </div>
-          <header>
+export default function Home() {
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Ma'lumot | Firdavs Faxriddinov's Personal Website</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <header>
             <din className="container">
               <div className="text-xizmatlar">
                 <h1>Ma'lumot</h1>
@@ -45,16 +32,15 @@ export default function Portfolio(params) {
             <button onClick={() => Router.push('/portfolio')} className="btn-aloqa">Portfolio</button>
             <button onClick={() => Router.push('/aloqa')} className="btn-aloqa">Aloqa</button>
           </div>
-          <footer id="footer">
-            <div className="container">
-              <h4 className="footer-text">Copyright ©2021 All rights reserved | made by Davlat Farruxov</h4>
-            </div>
-          </footer>
           <style jsx> {`
             *{
                 font-family: 'Robota', sans-serif;
                 margin: 0;
                 padding: 0; 
+            }
+            .imge-malumot-1 {
+                width: 98%;
+                margin: auto:
             }
             .footer-text {
                 background: #242f51;
@@ -115,7 +101,7 @@ export default function Portfolio(params) {
             }
             .container {
                 width: 1200px;  
-                margin: 0 auto;   
+                margin: auto;   
             }
             .active1 {
                 color: #000;
@@ -158,7 +144,21 @@ export default function Portfolio(params) {
             .text-xizmatlar h1{
                 margin-bottom: 45px;
             }
+            @media only screen and (max-width: 768px) {
+              .btn-aloqa {
+                display: inline-block;
+                font-size: 18px;
+                color: #ffffff;
+                background-color: #333333;
+                padding: 13px 20px;
+                border: none;
+                cursor: pointer;
+                width: 120px;
+                margin-left: 15px;
+                margin-bottom: 50px;
+            }
+            }
           `} </style>
-    </MainLayout>
+      </div>
   )
 }
