@@ -21,7 +21,7 @@ export default function Index() {
                 <Image src={profilePic} alt="Pictures of the author" className="image"/></div>
               </div>
               <div className="buttons">
-                <button onClick={() => Router.push('/portfolio-pages/page-16')} className="button-1">Oldingi</button>
+                <button onClick={() => Router.push('/portfolio-pages/page-24')} className="button-1">Oldingi</button>
                 <button onClick={() => Router.push('/portfolio')} className="button-2">Orqaga</button>
                 <button onClick={() => Router.push('/portfolio-pages/page-2')} className="button-3">Keyingi</button>
               </div>
