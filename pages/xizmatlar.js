@@ -18,18 +18,22 @@ export default function Home() {
             <div className="block-1">
               <h1>Uy qurish</h1>
               <h3>-Beton</h3>
+              <h3>-Plitomantaj (manalit)</h3>
               <h3>-Devor ko'tarish</h3>
               <h3>-Tom yopish</h3>
               <h3>-Eshik o'rnatish</h3>
-              <h3>-Santexnik</h3>
+              <h3>-Styashka</h3>
+              <h3>-Plitka (bruschatka)</h3>
             </div>
             <div className="block-2">
               <h1>Fasad</h1>
+              <h3>-Shtukaturka</h3>
               <h3>-Travertin</h3>
-              <h3>-Shkaturka</h3>
-              <h3>-Kafel va Plitka</h3>
+              <h3>-Jidkiy Travertin</h3>
+              <h3>-Kraska</h3>
+              <h3>-Kafel</h3>
               <h3>-Tunukapon</h3>
-              <h3>-Laminat pol</h3>
+              <h3>-Padrashifka</h3>
             </div>
             <div className="block-3">
               <h1>Ichki qism</h1>
@@ -38,6 +42,8 @@ export default function Home() {
               <h3>-Ganj ishlari</h3>
               <h3>-Kafel</h3>
               <h3>-Elektrik</h3>
+              <h3>-Santexnik</h3>
+              <h3>-Laminat pol</h3>
             </div>
           </div>
           <div className="maslahat">
