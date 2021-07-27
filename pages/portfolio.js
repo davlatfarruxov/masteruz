@@ -193,34 +193,34 @@ export default function Home() {
                 </div>  
                 <div className="Portfolio-images-mob5">
                   <div className="image-mob9">
-                    <Link href={'/portfolio-pages/page-9'}><Image src={profilePic17} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-17'}><Image src={profilePic17} alt="Pictures of the author"/></Link>
                   </div>  
                   <div className="image-mob10">
-                    <Link href={'/portfolio-pages/page-10'}><Image src={profilePic18} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-18'}><Image src={profilePic18} alt="Pictures of the author"/></Link>
                   </div>
                 </div>
                 <div className="Portfolio-images-mob6">  
                   <div className="image-mob11">
-                    <Link href={'/portfolio-pages/page-11'}><Image src={profilePic19} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-19'}><Image src={profilePic19} alt="Pictures of the author"/></Link>
                   </div>
                   <div className="image-mob12">
-                    <Link href={'/portfolio-pages/page-12'}><Image src={profilePic20} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-20'}><Image src={profilePic20} alt="Pictures of the author"/></Link>
                   </div>   
                 </div> 
                 <div className="Portfolio-images-mob7">
                   <div className="image-mob13">
-                    <Link href={'/portfolio-pages/page-13'}><Image src={profilePic21} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-21'}><Image src={profilePic21} alt="Pictures of the author"/></Link>
                   </div>  
                   <div className="image-mob14">
-                    <Link href={'/portfolio-pages/page-14'}><Image src={profilePic22} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-22'}><Image src={profilePic22} alt="Pictures of the author"/></Link>
                   </div>
                 </div> 
                 <div className="Portfolio-images-mob8">  
                   <div className="image-mob15">
-                    <Link href={'/portfolio-pages/page-15'}><Image src={profilePic23} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-23'}><Image src={profilePic23} alt="Pictures of the author"/></Link>
                   </div>
                   <div className="image-mob16">
-                    <Link href={'/portfolio-pages/page-16'}><Image src={profilePic24} alt="Pictures of the author"/></Link>
+                    <Link href={'/portfolio-pages/page-24'}><Image src={profilePic24} alt="Pictures of the author"/></Link>
                   </div>   
                 </div>  
               </div>
