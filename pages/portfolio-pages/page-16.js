@@ -19,7 +19,7 @@ export default function Index() {
               <div className="buttons">
                 <button onClick={() => Router.push('/portfolio-pages/page-15')} className="button-1">Oldingi</button>
                 <button onClick={() => Router.push('/portfolio')} className="button-2">Orqaga</button>
-                <button onClick={() => Router.push('/portfolio-pages/page-1')} className="button-3">Keyingi</button>
+                <button onClick={() => Router.push('/portfolio-pages/page-17')} className="button-3">Keyingi</button>
               </div>
             </div>     
           </div>
