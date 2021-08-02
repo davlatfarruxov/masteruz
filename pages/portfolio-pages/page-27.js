@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
-import profilePic from '../../img/image-1.jpg'
+import profilePic from '../../img/image-27.jpg'
 import Router from 'next/router'
 import { urlObjectKeys } from "next/dist/next-server/lib/utils";
 import Link from 'next/link';
@@ -21,9 +21,9 @@ export default function Index() {
                 <Image src={profilePic} alt="Pictures of the author" className="image"/></div>
               </div>
               <div className="buttons">
-                <button onClick={() => Router.push('/portfolio-pages/page-48')} className="button-1">Oldingi</button>
+                <button onClick={() => Router.push('/portfolio-pages/page-26')} className="button-1">Oldingi</button>
                 <button onClick={() => Router.push('/portfolio')} className="button-2">Orqaga</button>
-                <button onClick={() => Router.push('/portfolio-pages/page-2')} className="button-3">Keyingi</button>
+                <button onClick={() => Router.push('/portfolio-pages/page-28')} className="button-3">Keyingi</button>
               </div>
             </div>     
           </div>
