@@ -240,98 +240,98 @@ export default function Home() {
                 <div className="Portfolio-images-mobile">
                 <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic25} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-25'}><Image src={profilePic25} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic26} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-26'}><Image src={profilePic26} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic27} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-27'}><Image src={profilePic27} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic28} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-28'}><Image src={profilePic28} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic29} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-29'}><Image src={profilePic29} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic30} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-30'}><Image src={profilePic30} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic31} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-31'}><Image src={profilePic31} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic32} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-32'}><Image src={profilePic32} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic33} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-33'}><Image src={profilePic33} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic34} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-34'}><Image src={profilePic34} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic35} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-35'}><Image src={profilePic35} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic36} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-36'}><Image src={profilePic36} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic37} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-37'}><Image src={profilePic37} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic38} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-38'}><Image src={profilePic38} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic39} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-39'}><Image src={profilePic39} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic40} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-40'}><Image src={profilePic40} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic41} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-41'}><Image src={profilePic41} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic42} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-42'}><Image src={profilePic42} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic43} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-43'}><Image src={profilePic43} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic44} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-44'}><Image src={profilePic44} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic45} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-45'}><Image src={profilePic45} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic46} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-46'}><Image src={profilePic46} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob7">
                     <div className="image-mob13">
-                      <Link href={'/portfolio-pages/page-21'}><Image src={profilePic47} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-47'}><Image src={profilePic47} alt="Pictures of the author"/></Link>
                     </div>  
                     <div className="image-mob14">
-                      <Link href={'/portfolio-pages/page-22'}><Image src={profilePic48} alt="Pictures of the author"/></Link>
+                      <Link href={'/portfolio-pages/page-48'}><Image src={profilePic48} alt="Pictures of the author"/></Link>
                     </div>
                   </div> 
                   <div className="Portfolio-images-mob1">
